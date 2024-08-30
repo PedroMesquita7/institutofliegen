@@ -1,0 +1,392 @@
+/* Define a fonte padrão e a margem zero para o corpo */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Define o layout do corpo como flexível com direção de coluna */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz com que o conteúdo principal ocupe o espaço restante */
+main {
+    flex: 1;
+}
+
+/* Estilo para o rodapé fixo na parte inferior */
+footer {
+    background-color: #b3b3b3; /* Cor de fundo do rodapé */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para a interface do rodapé */
+footer .interface {
+    max-width: 1200px; /* Tamanho máximo do conteúdo do rodapé */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para a barra superior com informações de contato */
+.top-bar {
+    background-color: #b3b3b3; /* Cor de fundo da barra superior */
+    color: #f1f1f1; /* Cor do texto */
+    padding: 10px 0;
+}
+
+.top-bar .contact-info {
+    text-align: center;
+}
+
+.top-bar nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.top-bar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.top-bar nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.top-bar nav .inscreva-se {
+    background-color: #0FA1D3; /* Cor do botão "Inscreva-se" */
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.top-bar nav .inscreva-se:hover {
+    background-color: #0FA1D3; /* Cor do botão "Inscreva-se" ao passar o cursor */
+}
+
+/* Estilo para as seções Missão, Visão e Valores */
+.mv-sections {
+    margin-top: 20px;
+}
+
+.mv-section {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin-bottom: 20px; /* Espaço entre as seções */
+}
+
+.mv-text {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.mv-image {
+    flex: 0 0 auto; /* A imagem não crescerá além de seu tamanho natural */
+    width: 500px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 10px; /* Margem superior opcional */
+}
+
+.mv-image img {
+    width: 250%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/* Estilo para o menu de navegação desktop */
+.menu-desktop {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-desktop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-desktop ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: #080808; /* Cor dos links do menu */
+    font-weight: 600;
+}
+
+/* Estilo para a seção do topo do site */
+.topo-do-site {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Estilo para a seção sobre nós */
+.topo-do-site .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-topo-site {
+    flex: 1;
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.foto-topo-site {
+    flex: 1;
+}
+
+.foto-topo-site img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+
+/* Estilo para a caixa de Missão, Visão e Valores */
+/* Estilo para a seção Missão, Visão e Valores */
+/* Estilo para a seção Missão, Visão e Valores */
+/* Estilo para a seção Missão, Visão e Valores */
+.mv-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mv-box {
+    background-color: #f1f1f1; /* Cor de fundo das caixas */
+    border: 1px solid #f1f1f1; /* Borda das caixas */
+    border-radius: 5px;
+    padding: 15px;
+    width: 30%; /* Ajuste conforme necessário */
+    box-sizing: border-box;
+}
+
+.mv-box h3 {
+    margin-top: 0;
+}
+
+
+
+
+/* Estilo para a seção de atividades */
+.atividades {
+    padding: 20px;
+    background-color: #f1f1f1; /* Cor de fundo da seção */
+}
+
+.atividades h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.atividades-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.atividade-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f1f1f1; /* Cor de fundo das caixas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Ajuste o tamanho das caixas */
+}
+
+.atividade-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.atividade-imagem {
+    flex: 1;
+}
+
+.atividade-imagem img {
+    max-width: 130%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo para a seção Missão, Visão e Valores */
+.mv-sections {
+    margin-top: 40px;
+}
+
+.mv-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.mv-section:nth-child(even) .mv-text {
+    order: 2; /* Coloca o texto à direita em seções pares */
+}
+
+.mv-text {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mv-image {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mv-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Garantia de que o conteúdo da seção "topo-do-site" se adapte bem à tela */
+.topo-do-site .txt-topo-site {
+    margin-bottom: 40px;
+}
+
+/* Estilo padrão para os links do menu */
+nav.top-nav a {
+    color: #f1f1f1; /* Cor padrão do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 600; /* Ajuste o peso da fonte, se necessário */
+    transition: color 0.3s; /* Suaviza a transição de cor */
+}
+
+/* Estilo para quando o cursor passa sobre o link */
+nav.top-nav a:hover {
+    color: #33FF99; /* Cor laranja ao passar o mouse */
+}
+
+/* Estilo para a nova seção: Nossa Abordagem */
+.abordagem {
+    padding: 20px;
+    background-color: #f1f1f1; /* Cor de fundo leve */
+}
+
+.abordagem .interface {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.abordagem-item {
+    margin-bottom: 20px;
+}
+
+.abordagem-item h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #0FA1D3; /* Cor destacada */
+}
+
+.abordagem-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilo para a logo */
+.logo-container img {
+    max-width: 200px; /* Define a largura máxima da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja exibida como bloco */
+    margin: 0 auto; /* Centraliza a logo horizontalmente dentro do contêiner */
+}
+
+/* Estilo para a seção "Conhecendo mais sobre o Instituto Fliegen" */
+.topo-do-site .interface {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no início */
+    justify-content: space-between; /* Distribui o espaço entre o texto e o vídeo */
+}
+
+/* Estilo para a caixa de vídeo */
+.video-container {
+    flex: 1;
+    margin-left: 20px; /* Espaço entre o texto e o vídeo */
+    max-width: 100%; /* Ajusta a largura máxima para o contêiner */
+    overflow: hidden; /* Garante que não haja barras de rolagem */
+}
+
+/* Estilo para o vídeo */
+.video-container video {
+    width: 100%;
+    height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 8px; /* Bordas arredondadas para o vídeo */
+    border: none; /* Remove a borda do vídeo */
+}
+
+/* Margem do contato */
+.contato-info {
+    margin-left: 35px; /* Ajuste a margem para afastar o texto da borda esquerda */
+}
+
+.contato-info a {
+    color: #1DA1F2; /* Azul do Instagram */
+    font-weight: bold; /* Fonte em negrito */
+    text-decoration: none; /* Remover o sublinhado */
+    border: 2px solid #1DA1F2; /* Adicionar uma borda azul */
+    border-radius: 5px; /* Arredondar as bordas */
+    padding: 5px 10px; /* Espaçamento interno */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
+}
+
+.contato-info a:hover {
+    background-color: #1DA1F2; /* Cor de fundo azul quando passar o mouse */
+    color: white; /* Cor do texto em branco */
+}
+
+
+.contato-foto iframe {
+    width: 100%; /* Ajusta a largura do iframe ao espaço disponível */
+    max-width: 800px; /* Define uma largura máxima */
+    height: 400px; /* Altura do iframe */
+    border: 0; /* Remove a borda padrão */
+    margin-left: 35px; /* Ajusta a margem à esquerda para alinhar com o texto */
+}
+
+.inscreva-se {
+    background-color: #0FA1D3; /* Cor de fundo do botão */
+    color: #f1f1f1; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: 600; /* Ajusta o peso da fonte do botão */
+    margin-left: 20px; /* Espaço entre o menu e o botão */
+    margin-top: -4px; /* Ajuste o valor conforme necessário para subir o botão */
+    align-self: center; /* Alinha o botão verticalmente ao centro da barra de navegação */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0FA1D3; /* Define a cor azul para todos os títulos */
+}
+
+.contato-info p strong {
+    color: #0FA1D3; /* Azul para os títulos */
+    font-size: 1.2em; /* Aumentar o tamanho da fonte dos títulos */
+    display: block; /* Colocar os títulos em linha separada */
+    margin-bottom: 10px; /* Espaçamento abaixo dos títulos */
+}
